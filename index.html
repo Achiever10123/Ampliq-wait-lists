@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./android-chrome-192x192.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./android-chrome-192x192.png"
+    />
     <title>AMPLIQ | Build Your Freelance Career with Structure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -258,23 +263,54 @@
         </p>
 
         <form
-          id="waitlistForm"
-          class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto reveal"
+          id="my-form"
           action="https://formspree.io/f/mykgqqvw"
           method="POST"
+          class="max-w-md mx-auto"
         >
-          <input
-            type="email"
-            required
-            placeholder="Enter your email address"
-            class="flex-1 bg-white/5 border border-white/10 px-6 py-4 rounded-xl outline-none focus:border-indigo-500 transition-all text-white"
-          />
+          <div class="mb-6">
+            <label
+              for="email"
+              class="block text-slate-300 font-semibold mb-3 text-sm"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="mb-8">
+            <label
+              for="message"
+              class="block text-slate-300 font-semibold mb-3 text-sm"
+              >Message (Optional)</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all resize-none"
+              placeholder="Tell us what you're excited about..."
+            ></textarea>
+          </div>
+
           <button
+            id="my-form-button"
             type="submit"
-            class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-bold transition-all"
+            class="w-full px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all text-lg purple-glow reveal"
           >
-            Join Waitlist
+            Join the Waitlist
           </button>
+
+          <p
+            id="my-form-status"
+            class="mt-6 text-center text-slate-400 text-sm"
+          ></p>
         </form>
 
         <div
