@@ -244,14 +244,11 @@
     </section>
 
     <!-- Waitlist Section -->
-    <section id="waitlist" class="py-32 px-6">
+    <section id="waitlist" class="pb-16 px-6">
       <div
         class="max-w-5xl mx-auto waitlist-card rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden"
       >
-        <!-- Decorative circle -->
-        <div
-          class="absolute -top-24 -right-24 w-64 h-64 bg-indigo-600/10 blur-[100px]"
-        ></div>
+       
 
         <h2 class="text-4xl md:text-6xl font-extrabold mb-8 reveal">
           Be Part of the Next Generation of <br />
@@ -268,35 +265,28 @@
           method="POST"
           class="max-w-md mx-auto"
         >
-          <div class="mb-6">
-            <label
-              for="email"
-              class="block text-slate-300 font-semibold mb-3 text-sm"
-              >Email Address</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
-              placeholder="your@email.com"
-            />
-          </div>
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+                placeholder="Email Address"
+              />
+            </div>
 
-          <div class="mb-8">
-            <label
-              for="message"
-              class="block text-slate-300 font-semibold mb-3 text-sm"
-              >Message (Optional)</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              class="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all resize-none"
-              placeholder="Tell us what you're excited about..."
-            ></textarea>
+            <div>
+              <input
+                id="text"
+                name="text"
+                type="text"
+                required
+                class="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+                placeholder="Your Name"
+              />
+            </div>
           </div>
 
           <button
